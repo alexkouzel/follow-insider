@@ -1,7 +1,7 @@
 include 'aws-cdk'
 include 'core'
 
-rootProject.name = 'follow-insider-api'
+rootProject.name = 'follow-insider'
 rootProject.children.each {project ->
     project.buildFileName = "${project.name}.gradle"
 }
