@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track real-time trades from corporate insiders.">
+
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://follow-insider-app.com/">
+   
+    <link rel="stylesheet" href="/pages/index/index.css">
+    <script type="module" src="/pages/index/index.js"></script>
+   
+    <title>Welcome | Follow Insider</title>
+</head>
+
+<body>
+
+    <header>
+        <h3 onclick="location.assign('/')">
+            <span style="color: var(--white)">Follow</span>
+            <span style="color: var(--cyan)">Insider</span>
+        </h3>
+    </header>
+
+    <main>
+        <h1>Follow <span style="color: var(--cyan)">Insider</span></h1>
+        <div style="height: 3rem;"></div>
+
+        <div id="main-search">
+            <div class="search">
+                <label for="search-input"></label>
+                <input id="search-input" type="text" placeholder="Search a company by name, ticker, or CIK">
+                <img class="abs-ctr" src="/assets/icons/search.svg" alt="Search Icon">
+            </div>
+            <p id="view-all" class="link" onclick="location.assign('/trades')">view all</p>
+        </div>
+        <div>
+            <div id="suggestions">
+                <p onclick="location.assign('/trades?companyName=MICROSOFT%20CORP%20(MSFT)&companyCik=789019')">Microsoft</p>
+                <p onclick="location.assign('/trades?companyName=Tesla,%20Inc.%20(TSLA)&companyCik=1318605')">Tesla</p>
+                <p onclick="location.assign('/trades?companyName=COCA%20COLA%20CO%20(KO)&companyCik=21344')">Coca Cola</p>
+                <p onclick="location.assign('/trades?companyName=Apple%20Inc.%20(AAPL)&companyCik=320193')">Apple</p>
+                <p onclick="location.assign('/trades?companyName=ORACLE%20CORP%20(ORCL)&companyCik=1341439')">Oracle</p>
+                <p onclick="location.assign('/trades?companyName=CISCO%20SYSTEMS,%20INC.%20(CSCO)&companyCik=858877')">Cisco</p>
+                <p onclick="location.assign('/trades?companyName=ADOBE%20INC.%20(ADBE)&companyCik=796343')">Adobe</p>
+                <p onclick="location.assign('/trades?companyName=INTEL%20CORP%20(INTC)&companyCik=50863')">Intel</p>
+                <p onclick="location.assign('/trades?companyName=NETFLIX%20INC%20(NFLX)&companyCik=1065280')">Netflix</p>
+                <p onclick="location.assign('/trades?companyName=AMAZON%20COM%20INC%20(AMZN)&companyCik=1018724')">Amazon</p>
+                <p onclick="location.assign('/trades?companyName=Baidu,%20Inc.%20(BAIDF)&companyCik=1329099')">Baidu</p>
+                <p onclick="location.assign('/trades?companyName=Dell%20Technologies%20Inc.%20(DELL)&companyCik=1571996')">Dell</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

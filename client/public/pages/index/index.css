@@ -1,0 +1,56 @@
+@import "/styles/root.css";
+@import "/styles/components/default.css";
+@import "/styles/components/search.css";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30rem auto 0 auto;
+    max-width: 75rem;
+    padding: 0 2rem;
+}
+
+#main-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+#view-all {
+    white-space: nowrap;
+}
+
+#suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2.5rem 5rem;
+    gap: 0.8rem;
+}
+
+#suggestions p {
+    border-radius: 2rem;
+    border: var(--small-border);
+    padding: 0.5rem 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+#suggestions p:hover {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+@media screen and (max-width: 40rem) {
+    main {
+        margin-top: 15rem;
+    }
+
+    #suggestions {
+        padding: 2rem 0;
+    }
+}

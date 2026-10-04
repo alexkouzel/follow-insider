@@ -1,0 +1,66 @@
+/* -------------------------------- */
+/*              HEADER              */
+/* -------------------------------- */
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-blue);
+    height: 6rem;
+    width: 100%;
+    z-index: 99;
+}
+
+header h3 {
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+
+header ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5rem;
+    gap: 4rem;
+}
+
+header li {
+    color: white;
+    font-weight: bold;
+    line-height: 2.2rem;
+    cursor: pointer;
+}
+
+header li::after {
+    content: '';
+    display: block;
+    margin: auto;
+    background: white;
+    transition: all 0.3s;
+    height: .3rem;
+    width: 0;
+}
+
+header li:hover::after {
+    width: 100%;
+}
+
+/* -------------------------------- */
+/*              FOOTER              */
+/* -------------------------------- */
+
+footer {
+    margin-top: auto;
+    transform: rotate(180deg);
+}
+
+footer svg {
+    transform: rotateY(180deg);
+    width: calc(110% + 0.1rem);
+    height: 10rem;
+}
+
+footer .shape-fill {
+    fill: var(--yellow);
+}

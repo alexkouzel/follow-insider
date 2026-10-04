@@ -1,0 +1,52 @@
+.dropbtn {
+    position: relative;
+    background-color: var(--white);
+    border: var(--small-border);
+    padding: 1.2rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: start;
+    width: 15rem;
+}
+
+.dropbtn::after {
+    content: '';
+    background-image: url(/assets/icons/arrow-down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    transform: translateY(50%);
+    right: 1.5rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: var(--white);
+    position: absolute;
+    min-width: 14rem;
+    border: var(--small-border);
+    overflow: hidden;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.dropdown-content p {
+    cursor: pointer;
+    padding: 1.2rem 1.6rem;
+}
+
+.dropdown-content p:hover {
+    background-color: var(--faint);
+}
+
+.dropdown-blocked button {
+    color: var(--grey)
+}

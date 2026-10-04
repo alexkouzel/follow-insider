@@ -1,0 +1,42 @@
+@import "common/helpers.css";
+@import "common/reset.css";
+@import "common/text.css";
+
+:root {
+    /* blue colors */
+    --dark-blue: #0A142F;
+    --blue: #384b80;
+    --cyan: #3DA8AE;
+
+    /* black/white colors */
+    --black: #000;
+    --dark-grey: #444;
+    --grey: #AAA;
+    --light-grey: #CCC;
+    --faint: #EEE;
+    --white: #FFF;
+
+    /* other colors */
+    --green: #4F8D15;
+    --yellow: #EBD82C;
+    --red: #F51A1A;
+
+    /* chart colors */
+    --c1: #34495E;
+    --c2: #1E6A49;
+    --c3: #7B8D8E;
+    --c4: #4B3A6E;
+    --c5: #6E4F6A;
+    --c6: #515A5A;
+
+    /* borders */
+    --small-border: .1rem solid var(--light-grey);
+
+    /* shadows */
+    /* --shadow-0: 0 .1rem .4rem .1rem rgba(0, 0, 0, 0.10); */
+    --shadow-1: 0 .2rem .4rem .2rem rgba(0, 0, 0, 0.15);
+
+    /* header */
+    --header-height: 6rem;
+    --header-font: 1.4rem;
+}

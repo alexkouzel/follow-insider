@@ -1,0 +1,35 @@
+@import "/styles/root.css";
+@import "/styles/components/default.css";
+@import "/styles/components/search.css";
+@import "/styles/components/table.css";
+@import "/styles/components/dropdown.css";
+
+main {
+    padding: 4rem 6rem 0 6rem;
+}
+
+#filters {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    gap: 3rem;
+}
+
+#filters-2 {
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 40rem) {
+    .dropbtn { 
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    #filters {
+        max-width: none;
+    }
+}
