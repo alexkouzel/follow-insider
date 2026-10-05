@@ -6,4 +6,4 @@ build
 .env.sh
 
 cdk.context.json
-cdk.out
+cdk.outlogs
