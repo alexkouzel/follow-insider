@@ -6,7 +6,7 @@
    {user} -> Security credentials -> Access keys -> Create access key
 
 3. Configure AWS CLI by typing:
-   ```bath
+   ```bash
    aws configure
    ```
 
